@@ -28,22 +28,6 @@ public class UserController {
 
         List<UserEntity> list = userService.select(name, password);
         if (list!=null) {
-            try {
-//                String username= URLEncoder.encode(name, "UTF-8");
-                Cookie cookie=new Cookie("name",URLEncoder.encode(name,"utf-8"));
-                Cookie cookie1=new Cookie("password",password);
-                cookie.setMaxAge(60);
-                cookie1.setMaxAge(60);
-                response.addCookie(cookie);
-                response.addCookie(cookie1);
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-            }
-//          request.getSession().setAttribute("name",name);
-//          request.getSession().setAttribute("password",password);
-//          request.getSession().setMaxInactiveInterval(30);
-//          Object username=request.getSession().getAttribute("name");
-//          System.out.println(username);
           return "success";
         }
         else {
