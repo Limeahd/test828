@@ -13,6 +13,7 @@ hechao 02
 hechao 02
 
 
+<<<<<<< HEAD
 
 
 hechao04
@@ -24,3 +25,12 @@ hechao04
 hechao04
 hechao04
 hechao04
+=======
+hechao 03
+hechao 03
+hechao 03
+hechao 03
+hechao 03
+hechao 03
+hechao 03
+>>>>>>> 50f3f95b57125db82361eb1235257a341ebbf6dd
